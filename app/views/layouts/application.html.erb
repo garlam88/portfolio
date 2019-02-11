@@ -12,28 +12,24 @@
 
   <body>
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-       <nav class="nav nav-masthead justify-content-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <nav class="nav nav-masthead justify-content-center">
  
-    <%= render "shared/application_nav" %>
-
-    <%= login_helper %>
-
-    <%= yield %>
-
-    <%= copyright_generator %>
+            <%= render "shared/application_nav" %>
 
 
-    <%= source_helper("application") %>
+            <%= yield %>
 
-  </nav>
-</div>
-</header>
-</div>
+            <%= render "shared/application_footer" %>
+    
+            <%= source_helper("application") %>
 
-  
+          </nav>
+        </div>
+      </header>
+    </div> 
   </body>
 </html>
 
