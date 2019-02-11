@@ -11,10 +11,13 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-    <%= render "shared/nav", location: 'top' %>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+       <nav class="nav nav-masthead justify-content-center">
+ 
+    <%= render "shared/application_nav" %>
 
     <%= login_helper %>
 
@@ -24,5 +27,14 @@
 
 
     <%= source_helper("application") %>
+
+  </nav>
+</div>
+</header>
+</div>
+
+  
   </body>
 </html>
+
+
