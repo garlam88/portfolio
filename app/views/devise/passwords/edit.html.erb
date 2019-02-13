@@ -1,6 +1,7 @@
 <div class="login">
   <div class="card">
-    <div class="card-body">
+    <div class="card-block">
+
       <h2>Change your password</h2>
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
@@ -12,7 +13,7 @@
           <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %> characters minimum)</em><br />
           <% end %>
-          <%= f.password_field :password, autofocus: true, autocomplete: "new-password", class: 'form-control' %>
+          <%= f.password_field :password, autofocus: true, autocomplete: "off", class: 'form-control' %>
         </div>
 
         <div class="form-group">
@@ -26,9 +27,8 @@
       <% end %>
 
       <div class="auth-links">
-      <%= render "devise/shared/links" %>
+        <%= render "devise/shared/links" %>
       </div>
-
-   </div>
+    </div>
   </div>
 </div>
