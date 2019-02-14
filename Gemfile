@@ -61,7 +61,7 @@ gem 'devise', '~> 4.5'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 
 gem 'bootstrap', '~> 4.2.1'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'jquery-rails'
 
 gem 'gl_view_tool', git: 'https://github.com/garlam88/gl_view_tool'
 
