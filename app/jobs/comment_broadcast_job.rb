@@ -1,5 +1,4 @@
 class CommentBroadcastJob < ApplicationJob
-  #create list of comments
   queue_as :default
 
   def perform(comment)
