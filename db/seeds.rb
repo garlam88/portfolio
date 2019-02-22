@@ -16,11 +16,10 @@ User.create!(
 
 puts "1 Regular user created"
 
-3.times do |topic|
-  Topic.create!(
-    title: "Topic #{topic}"
-  )
-end
+
+Topic.create!(title: "Coding Exercises")
+Topic.create!(title: "Ruby")
+Topic.create!(title: "Rails")
 
 puts "3 Topics created"
 
