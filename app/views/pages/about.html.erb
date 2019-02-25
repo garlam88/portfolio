@@ -7,6 +7,17 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: "profile-img" %>
+
+        <div class="skills">
+          <%= @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+
+            </div>
+            
+
+          <% end %>
+        </div>
       </div>
 
       <div class="col-md-8">
